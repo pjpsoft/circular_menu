@@ -179,7 +179,11 @@ class CircularMenuState extends State<CircularMenu>
           _initialAngle = 0.5 * math.pi;
           break;
         default:
-          throw 'startingAngleInRadian and endingAngleInRadian can not be null';
+          // case 'bottomLeft':
+          _completeAngle = 0.5 * math.pi;
+          _initialAngle = 1.5 * math.pi;
+          break;
+          // throw 'startingAngleInRadian and endingAngleInRadian can not be null';
       }
     }
   }
